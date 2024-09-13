@@ -1,0 +1,17 @@
+{
+  "name": "product-preview-card-component-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w style/sass/index.scss  style/index.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "npm"
+  ],
+  "author": "Julio César García Rodríguez",
+  "license": "ISC"
+}
