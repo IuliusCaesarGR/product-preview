@@ -11,6 +11,18 @@ $clr-price_btn: hsl(158, 36%, 37%);
 $clr-title: hsl(212, 21%, 14%);
 $clr-text: hsl(228, 12%, 48%);
 $clr-attribution: hsl(228, 45%, 44%);
-$fnt-size: 14px;
+$fnt-size: 1.4rem;
 $fnt-title: "Fraunces", serif; // weights 700
 $fnt-text: "Montserrat", system-ui; // weights 500, 700
+
+*{ // Reset styles
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+figure {
+    all: unset;
+}
