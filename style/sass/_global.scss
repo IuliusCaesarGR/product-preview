@@ -8,6 +8,7 @@
 $clr-main-back: hsl(30, 38%, 92%);
 $clr-card-back: hsl(0, 0%, 100%);
 $clr-price_btn: hsl(158, 36%, 37%);
+$clr-active: hsl(158, 37%, 23%);
 $clr-title: hsl(212, 21%, 14%);
 $clr-text: hsl(228, 12%, 48%);
 $clr-attribution: hsl(228, 45%, 44%);
@@ -22,7 +23,4 @@ $fnt-text: "Montserrat", system-ui; // weights 500, 700
 }
 html{
     font-size: 62.5%;
-}
-figure {
-    all: unset;
 }
