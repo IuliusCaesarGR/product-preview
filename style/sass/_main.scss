@@ -1,7 +1,8 @@
 
 body{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
+    min-height: 80rem;
     background-color: $clr-main-back;
     display: flex;
     flex-direction: column;
@@ -10,7 +11,7 @@ body{
 }
 .card{
     width: 90%;
-    min-width: 36rem;
+    min-width: 32rem;
     max-width: 40rem;
     height: auto;
     background-color: $clr-card-back;
@@ -29,7 +30,7 @@ body{
     &__info{
         width: 100%;
         height: 45%;
-        min-height: 38rem;
+        min-height: 39rem;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -108,12 +109,12 @@ footer{
 }
 @media (min-width: 600px){
     .card{
-        max-width: 64rem;
+        max-width: 63rem;
         height: auto;
         max-height: 45rem;
         flex-direction: row;
         picture{
-            height: 100%;
+            height: 45rem;
         }
         &__image{
             height: 100%;
@@ -122,6 +123,7 @@ footer{
         }
         &__info{
             padding: 30px;
+            min-height: 46rem;
             height: 100%;
             justify-content: space-around;
         }
