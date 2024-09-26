@@ -1,0 +1,69 @@
+
+.cart{
+    display: flex;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    & span {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: $clr-main-back;
+        color: rgb(0, 0, 0) !important;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+        position: relative;
+        bottom: 6px;
+        right: 1px;
+    }
+}
+.option{
+    width: 90%;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    
+    &__pages{
+        width: 75%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.6rem;
+        color: white;
+        & p > a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+.diag{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.506);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & section{
+        width: 80%;
+        height: 75%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    & #remove{
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        top: 10%;
+        right: 9%;
+        padding-top: 30px;
+        text-align: center;
+    }
+}

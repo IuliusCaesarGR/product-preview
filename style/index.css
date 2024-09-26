@@ -11,17 +11,6 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  width: 100vw;
-  height: 100%;
-  min-height: 80rem;
-  background-color: hsl(30, 38%, 92%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .card {
   width: 90%;
   min-width: 32rem;
@@ -109,6 +98,116 @@ body {
 .card__info--button:hover button {
   cursor: pointer;
   background-color: hsl(158, 37%, 23%);
+}
+
+.cart {
+  display: flex;
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.cart span {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: hsl(30, 38%, 92%);
+  color: rgb(0, 0, 0) !important;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  position: relative;
+  bottom: 6px;
+  right: 1px;
+}
+
+.option {
+  width: 90%;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+}
+.option__pages {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.6rem;
+  color: white;
+}
+.option__pages p > a {
+  text-decoration: none;
+  color: white;
+}
+
+.diag {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.506);
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.diag section {
+  width: 80%;
+  height: 75%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.diag #remove {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 10%;
+  right: 9%;
+  padding-top: 30px;
+  text-align: center;
+}
+
+body {
+  width: 100vw;
+  height: 100%;
+  min-height: 80rem;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: 38px;
+  height: 38px;
+  border-radius: 1rem;
+  background-color: hsla(158, 36%, 37%, 0.606);
+  backdrop-filter: blur(8px);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 1%;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .menu {
+  width: 38px;
+  height: 32px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav .menu span {
+  width: 25px;
+  height: 3px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.692);
 }
 
 footer {

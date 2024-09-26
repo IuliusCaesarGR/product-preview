@@ -8,7 +8,26 @@
   <title>Product preview card component</title>
 </head>
 <body>
-  <main class="card">
+  <nav> <!-- Bar Navigation -->
+    <section class="option">
+      <div class="option__pages">
+        <p><a href="">Product</a></p>
+        <p><a href="">About</a></p>
+        <p><a href="">Account</a></p>
+      </div>
+      <section class="cart">
+        <img src="./images/icon-cart.svg" alt="Cart">
+        <span>0</span>
+      </section>
+    </section>
+    <section class="menu"> <!-- square menu  -->
+      <span></span>
+      <span></span>
+      <span></span>
+    </section>
+    <!-- <img class="menu" src="./images/icon-nav.svg" alt="nav"> -->
+  </nav>
+  <main class="card"> <!-- Product Card -->
     <picture >
       <source srcset="/images/image-product-mobile.jpg" media="(max-width:599px)">
       <source srcset="/images/image-product-desktop.jpg" media="(min-width: 600px)">
@@ -23,12 +42,14 @@
         <h1>$149.99</h1>
         <p>$169.99</p>
       </section>
-      <section class="card__info--button">
+      <section id="button" class="card__info--button">
         <img src="./images/icon-cart.svg" alt="Icon of Cart on the button">
         <button>Add to Cart</button>
       </section>
     </section>
   </main>
+  <div class="checkout"></div> <!-- preview check out -->
+  <script src="./src/index.js" type="module"></script>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#" target="_blank">Julio César García Rodríguez</a>.
