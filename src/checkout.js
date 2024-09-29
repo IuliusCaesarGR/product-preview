@@ -1,5 +1,5 @@
 import { modal, quantity, iconMenu} from "./inputSel";
-import { verify } from "./showNav";
+import { verify, x, setVal } from "./showNav";
 
 let total = 0;
 
@@ -33,8 +33,14 @@ function notice(){
                 ${remove('msg')}
             </section>
         </div>
-    `
+    ` 
+    if (x){
         verify()
+    }else {
+        x = true
+        verify()
+    }
+        
         iconMenu.style = `
         display: flex;
         `

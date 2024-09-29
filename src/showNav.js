@@ -1,5 +1,6 @@
 import { nav, option, iconMenu } from "./inputSel";
 
+
 function setVal(value) {
     if(value == true){ //true return false
         return !value;
@@ -9,6 +10,7 @@ function setVal(value) {
 }
 
 let x = setVal();
+
 function verify(){
     if(x){
         option.style.display = 'flex';
@@ -34,4 +36,4 @@ function verify(){
 }
 
 
-export { verify };
+export { verify , x ,setVal };
