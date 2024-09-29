@@ -1,4 +1,5 @@
-import { modal, quantity } from "./inputSel";
+import { modal, quantity, iconMenu} from "./inputSel";
+import { verify } from "./showNav";
 
 let total = 0;
 
@@ -8,17 +9,6 @@ function addCart(){
     console.log(total);
     total === 1 ? notice() : checkout(); 
 } 
-
-function notice(){
-    modal.innerHTML = `
-        <div class="message">
-            <section>
-                <p>Your product is add Cart!</p>
-                ${remove('msg')}
-            </section>
-        </div>
-    `
-}
 
 function remove(xout){
     return `
@@ -35,6 +25,21 @@ function remove(xout){
                 }exe('${xout}')"
     >X</span>`;
 }
+function notice(){
+    modal.innerHTML = `
+        <div class="message">
+            <section>
+                <p>Your product is add Cart!</p>
+                ${remove('msg')}
+            </section>
+        </div>
+    `
+        verify()
+        iconMenu.style = `
+        display: flex;
+        `
+}
+
 function checkout() {
     modal.innerHTML= `
     <div class="diag">
@@ -47,4 +52,4 @@ function checkout() {
 ` ;
 }; 
 
-export { checkout, addCart }
+export { checkout, addCart, remove }

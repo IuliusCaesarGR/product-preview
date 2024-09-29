@@ -6,8 +6,8 @@ function setVal(value) {
     } else {
         return !value; // false return true
     }
-    
 }
+
 let x = setVal();
 function verify(){
     if(x){
@@ -32,5 +32,6 @@ function verify(){
     }
     return x = setVal(x)
 }
+
 
 export { verify };
