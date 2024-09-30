@@ -135,19 +135,28 @@ html {
 }
 .option__pages p {
   display: flex;
+  width: 70px;
   flex-direction: column;
   align-items: center;
+  backdrop-filter: brightness(1);
+  background-color: rgba(255, 255, 255, 0.335);
+  border-radius: 8px;
 }
 .option__pages p img {
   width: 18px;
   margin-bottom: 1px;
 }
+.option__pages p:hover {
+  background-color: rgba(65, 130, 78, 0.238);
+}
 .option__pages p > a {
   text-decoration: none;
-  color: white;
+  color: rgba(0, 0, 0, 0.649);
+  font-weight: 600;
 }
 
 .diag {
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -156,30 +165,21 @@ html {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.506);
   font-size: 2rem;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 .diag section {
-  width: 80%;
-  height: 75%;
+  width: 100%;
+  height: 100%;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-.diag #remove {
-  width: 60px;
-  height: 60px;
-  position: fixed;
-  top: 10%;
-  right: 9%;
-  padding-top: 30px;
-  text-align: center;
-}
 
 .message {
+  display: none;
   position: fixed;
   top: 70%;
   left: 50%;
@@ -199,14 +199,18 @@ html {
   justify-content: center;
   align-items: center;
 }
-.message #remove {
+
+#remove {
+  display: none;
   width: 60px;
   height: 60px;
   position: fixed;
   top: 10%;
   right: 9%;
-  padding-top: 11px;
+  padding-top: 30px;
   text-align: center;
+  z-index: 20;
+  font-size: 1.6rem;
 }
 
 body {

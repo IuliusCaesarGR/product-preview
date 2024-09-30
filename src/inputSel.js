@@ -6,5 +6,20 @@ const cart = document.querySelector('.cart');
 const modal = document.querySelector('.checkout');
 const iconMenu = document.querySelector('.menu'); /* menu button */
 const quantity = document.querySelector('span');
+const msgNotice = document.querySelector('.message');
+const diag = document.querySelector('.diag')
+const iconExit = document.querySelector('#remove')
 
-export { nav, option, button, cart, iconMenu, modal, quantity };
+
+export { 
+    nav,
+    option,
+    button,
+    cart,
+    iconMenu, 
+    modal,
+    quantity, 
+    msgNotice, 
+    diag,
+    iconExit
+};
