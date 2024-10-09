@@ -1,4 +1,4 @@
-import { modalPage, exitIcon, iconExit } from "./inputSel";
+import { modalPage, exitIcon } from "./inputSel";
 import { setVal } from "./logics";
 
 let d = setVal()

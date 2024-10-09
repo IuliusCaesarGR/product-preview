@@ -14,14 +14,14 @@ function verify(){
         right: 0px;
         border-radius: 0px;
         `
-        iconMenu.src = '/images/icon-close.svg';
+        iconMenu.src = './../images/icon-close.svg';
     }
     else{
         option.style.display = 'none';
         nav.style = `
         width: 40px;
         height: 40px;`;
-        iconMenu.src = '/images/icon-nav.svg';
+        iconMenu.src = './../images/icon-nav.svg';
     }
     return extendNav = setVal(extendNav)
 }
