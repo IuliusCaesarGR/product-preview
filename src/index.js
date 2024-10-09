@@ -10,5 +10,6 @@ cart.addEventListener('click', checkout);
 iconExit.addEventListener('click', remove);
 button.addEventListener('click', addCart);
 pagesArray.map((page) => {
-    page.addEventListener('click',  aboutInfo);
+    page.id == 'about-info'? page.addEventListener('click',  aboutInfo): console.log('left ');
+    
 })
