@@ -1,18 +1,10 @@
 import { nav, option, iconMenu } from "./inputSel";
+import { setVal } from "./logics";
 
-
-function setVal(value) {
-    if(value == true){ //true return false
-        return !value;
-    } else {
-        return !value; // false return true
-    }
-}
-
-let x = setVal();
+let extendNav = setVal(); //  init in true
 
 function verify(){
-    if(x){
+    if(extendNav){
         option.style.display = 'flex';
         nav.style = `
         width: 100%;
@@ -22,18 +14,17 @@ function verify(){
         right: 0px;
         border-radius: 0px;
         `
-        iconMenu.style.display = 'flex';
+        iconMenu.src = '/images/icon-close.svg';
     }
     else{
-            option.style.display = 'none';
-            nav.style = `
-            width: 40px;
-            height: 40px;
-            `;
-            iconMenu.style.display = 'inline-flex';
+        option.style.display = 'none';
+        nav.style = `
+        width: 40px;
+        height: 40px;`;
+        iconMenu.src = '/images/icon-nav.svg';
     }
-    return x = setVal(x)
+    return extendNav = setVal(extendNav)
 }
 
 
-export { verify , x ,setVal };
+export { verify , extendNav };

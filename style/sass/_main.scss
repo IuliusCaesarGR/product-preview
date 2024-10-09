@@ -22,21 +22,13 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    & .menu {
-        width: 38px;
-        height: 32px;
-        display: inline-flex;
-        flex-direction: column;
+    & .icon-menu {
+        display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        & span{
-            width: 25px;
-            height: 3px;
-            border-radius: 30px;
-            background-color: rgba(0, 0, 0, 0.692);
-        }
+        width: 33px;
+        height: 33px;
+
     }
-    
 }
 footer{
     font-size: 1.6rem;

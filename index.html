@@ -8,24 +8,23 @@
   <title>Product preview card component</title>
 </head>
 <body>
-  <nav> <!-- Bar Navigation -->
+  <nav class="navBar"> <!-- Bar Navigation -->
     <section class="option">
       <div class="option__pages">
-        <p><img src="./images/icons8-product-24.png" alt="icon of page products"><a href="">Product</a></p>
-        <p><img src="./images/icons8-about-24.png" alt="icon of page about"><a href="">About</a></p>
-        <p><img src="./images/icons8-person-32.png" alt="icon of page about"><a href="">Account</a></p>
+        <p class="page"><img src="./images/icons8-product-24.png" alt="icon of page products"><a href="/public/product.html">Product</a></p>
+        <p class="page" id="about-info"><img src="./images/icons8-about-24.png" alt="icon of page about">About</p>
+        <p class="page"><img src="./images/icons8-person-32.png" alt="icon of page about"><a href="/public/account.html">Account</a></p>
       </div>
       <section class="cart">
         <img src="./images/icon-cart.svg" alt="Cart">
         <span>0</span>
       </section>
     </section>
-    <section class="menu"> <!-- square menu  -->
-      <span></span>
-      <span></span>
-      <span></span>
-    </section>
-    <!-- <img class="menu" src="./images/icon-nav.svg" alt="nav"> -->
+    <!-- square menu  -->
+     <section class="icon-menu">
+      <img class="menu" src="./images/icon-nav.svg" alt="nav">
+     </section>
+    
   </nav>
   <main class="card"> <!-- Product Card -->
     <picture >
@@ -43,24 +42,23 @@
         <p>$169.99</p>
       </section>
       <section id="button" class="card__info--button">
-        <img src="./images/icon-cart.svg" alt="Icon of Cart on the button">
+        <img class="menu" src="./images/icon-cart.svg" alt="Icon of Cart on the button">
         <button>Add to Cart</button>
       </section>
     </section>
   </main>
   <div class="checkout">
-    <span id="remove">X</span>
+    <span class="remove">X</span>
     <div class="diag"></div> 
   </div>
+  <img class="icon-exit" src="/images/icon-close.svg">
+  <div class="modalPage"></div>
   <div class="message">
     <section>
         <p>The product add your Cart!</p>
     </section>
 </div> <!-- preview check out -->
   <script src="./src/index.js" type="module"></script>
- <!--  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#" target="_blank">Julio César García Rodríguez</a>.
-  </footer> -->
+ 
 </body>
 </html>
