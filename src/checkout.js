@@ -18,18 +18,36 @@ function notice(){
     msgNotice.style = `display: block;`;
     iconMenu.style = `display: flex;`
     // hide notice
-    setTimeout(()=> msgNotice.style.display = 'none', 1700);
+    setTimeout(()=> msgNotice.style.display = 'none', 2000);
     //open nav
     if(extendNav){  
         verify()
     }
 }
-
+const sentUser = ()=> {
+    return `
+    <section class="checkout__account">
+        <h5>Info</h5>
+        <div>
+            <img alt="User">
+            <p>Send to User</p>
+        </div>
+        
+    </section>`;
+}
+const articleSend = ()=> {
+    return `
+    <section class="checkout__preview-article">
+        <p>you have a ${totalPerfume}</p>
+    </section>
+    `
+}
 function checkout() {
    diag.innerHTML = `
-        <section>
-            <p>This a new article</p>
-            <p>you have a ${totalPerfume}</p>
+        <section class="checkout">
+            ${sentUser()}
+            ${articleSend()}
+            ${articleSend()}
         </section>
     `
     iconExit.style.display = 'block';

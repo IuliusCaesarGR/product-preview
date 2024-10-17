@@ -16,13 +16,22 @@ html {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   background-color: white;
   color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  line-height: 3rem;
+}
+.pageInfo h2 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+.pageInfo p {
+  font-size: 1.7rem;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .icon-exit {
@@ -149,13 +158,13 @@ html {
   align-items: center;
 }
 .option__pages {
-  width: 75%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   font-size: 1.4rem;
   cursor: pointer;
 }
-.option__pages p {
+.option__pages div {
   display: flex;
   width: 75px;
   height: 40px;
@@ -167,17 +176,15 @@ html {
   color: rgba(0, 0, 0, 0.649);
   font-weight: 600;
 }
-.option__pages p img {
+.option__pages div img {
   width: 18px;
   margin: 2px 0px;
 }
-.option__pages p:hover {
+.option__pages div:hover {
   background-color: rgba(65, 130, 78, 0.238);
 }
-.option__pages p > a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.649);
-  font-weight: 600;
+.option__pages p:hover {
+  background-color: rgba(65, 130, 78, 0.238);
 }
 
 .diag {
@@ -193,22 +200,44 @@ html {
   justify-content: center;
   align-items: center;
 }
-.diag section {
+
+.checkout {
   width: 100%;
   height: 100%;
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  z-index: 1000;
+}
+.checkout__account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  height: 8rem;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.141);
+}
+.checkout__account img {
+  margin-right: 0.8rem;
+}
+.checkout__preview-article {
+  width: 85%;
+  height: 20rem;
+  border-radius: 0.8rem;
+  margin: 2rem 0;
+  background-color: rgba(245, 222, 179, 0.459);
 }
 
 .message {
   display: none;
   position: fixed;
   top: 70%;
-  left: 50%;
-  transform: translate(-50%, 0%);
+  /* left: 50%; */
+  /* transform: translate(-100%, 0%); */
   width: 85%;
   height: 5rem;
   border-radius: 0.8rem;
@@ -216,6 +245,7 @@ html {
   font-size: 1.6rem;
   background-color: hsl(30, 38%, 92%);
   border: solid 1px rgba(0, 0, 0, 0.351);
+  animation: customAni 2s ease-out 0s normal none;
 }
 .message section {
   width: 100%;
@@ -225,17 +255,40 @@ html {
   align-items: center;
 }
 
+@keyframes customAni {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
 .remove {
   display: none;
   width: 60px;
   height: 60px;
   position: fixed;
-  top: 10%;
+  top: 5%;
   right: 9%;
   padding-top: 30px;
   text-align: center;
   z-index: 20;
   font-size: 1.6rem;
+}
+
+.assa {
+  position: absolute;
+  top: 4.4rem;
+  right: 29%;
+  width: 7.5rem;
+  height: 4.5rem;
+  background-color: rgba(255, 255, 255, 0.565);
+  border-radius: 0 0 0.8rem 0.8rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 body {

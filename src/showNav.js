@@ -1,5 +1,7 @@
 import { nav, option, iconMenu } from "./inputSel";
 import { setVal } from "./logics";
+import imgNav from './../images/icon-nav.svg';
+import imgClose from './../images//icon-close.svg';
 
 let extendNav = setVal(); //  init in true
 
@@ -14,14 +16,14 @@ function verify(){
         right: 0px;
         border-radius: 0px;
         `
-        iconMenu.src = './../images/icon-close.svg';
+        iconMenu.src = imgClose;
     }
     else{
         option.style.display = 'none';
         nav.style = `
         width: 40px;
         height: 40px;`;
-        iconMenu.src = './../images/icon-nav.svg';
+        iconMenu.src = imgNav;
     }
     return extendNav = setVal(extendNav)
 }
