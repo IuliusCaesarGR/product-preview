@@ -11,7 +11,7 @@ function verify(){
         nav.style = `
         width: 100%;
         padding: 6px;
-        height: 50px;
+        height: 55px;
         top:0%;
         right: 0px;
         border-radius: 0px;
