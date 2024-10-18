@@ -219,19 +219,94 @@ html {
   align-items: center;
   width: 85%;
   height: 8rem;
-  border-radius: 0.6rem;
+  border-radius: 0.5rem;
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.141);
+  background-color: rgba(0, 0, 0, 0.112);
 }
 .checkout__account img {
   margin-right: 0.8rem;
 }
-.checkout__preview-article {
+.checkout__user {
+  display: flex;
+  width: 90%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+.checkout__preview {
   width: 85%;
   height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 0.8rem;
   margin: 2rem 0;
-  background-color: rgba(245, 222, 179, 0.459);
+  padding: 1rem;
+  background-color: rgba(245, 222, 179, 0.218);
+}
+.checkout__preview--article {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.checkout__preview--article h4 {
+  margin-bottom: 1.8rem;
+}
+.checkout__preview--article section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkout__preview--article p {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: green;
+}
+.checkout__preview--article img {
+  max-width: 20rem;
+  width: 35%;
+  min-height: 8rem;
+  margin-right: 2rem;
+}
+.checkout__preview--article span {
+  font-weight: 900;
+}
+.checkout__total {
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem 0 1rem;
+}
+.checkout__total--control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 2rem;
+  background-color: white;
+}
+.checkout__total--control button {
+  width: 3rem;
+  height: 100%;
+  font-size: 2.2rem;
+}
+.checkout__total--control #rest {
+  border-radius: 1.5rem 0 0 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.checkout__total--control #toadd {
+  border-radius: 0 1rem 1rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.checkout__total #eliminate {
+  width: 7rem;
+  height: 3rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .message {

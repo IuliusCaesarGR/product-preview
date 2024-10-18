@@ -1,5 +1,6 @@
 import { quantity, iconMenu, msgNotice, iconExit, diag} from "./inputSel";
 import { verify, extendNav } from "./showNav";
+import { sentUser, articleSend } from "./payment";
 
 let totalPerfume = 0;
 
@@ -24,24 +25,7 @@ function notice(){
         verify()
     }
 }
-const sentUser = ()=> {
-    return `
-    <section class="checkout__account">
-        <h5>Info</h5>
-        <div>
-            <img alt="User">
-            <p>Send to User</p>
-        </div>
-        
-    </section>`;
-}
-const articleSend = ()=> {
-    return `
-    <section class="checkout__preview-article">
-        <p>you have a ${totalPerfume}</p>
-    </section>
-    `
-}
+
 function checkout() {
    diag.innerHTML = `
         <section class="checkout">
@@ -59,4 +43,4 @@ function checkout() {
 
 }; 
 
-export { checkout, addCart, remove }
+export { checkout, addCart, remove, totalPerfume }
